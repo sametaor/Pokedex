@@ -41,7 +41,7 @@ if HP_full_input=="yes":
         HP_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=) "))
         if HP_filter_input=="=":
             HP_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{HP_filter_input}{HP_number_input}'))
+            print(pokedexdf.query(f'HP{HP_filter_input}{HP_filter_input}{HP_number_input}'))
         if HP_filter_input==">":
             HP_number_input=int(input("What is the number to be pitted against? "))
             print(pokedexdf.query(f'HP{HP_filter_input}{HP_number_input}'))
@@ -64,19 +64,19 @@ if Atk_full_input=="yes":
         Atk_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=)"))
         if Atk_filter_input=="=":
             Atk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Atk_filter_input}{Atk_number_input}'))
+            print(pokedexdf.query(f'Attack{Atk_filter_input}{Atk_filter_input}{Atk_number_input}'))
         if Atk_filter_input==">":
             Atk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Atk_filter_input}{Atk_number_input}'))
+            print(pokedexdf.query(f'Attack{Atk_filter_input}{Atk_number_input}'))
         if Atk_filter_input=="<":
             Atk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Atk_filter_input}{Atk_number_input}'))
+            print(pokedexdf.query(f'Attack{Atk_filter_input}{Atk_number_input}'))
         if Atk_filter_input==">=":
             Atk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Atk_filter_input}{Atk_number_input}'))
+            print(pokedexdf.query(f'Attack{Atk_filter_input}{Atk_number_input}'))
         if Atk_filter_input=="<=":
             Atk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Atk_filter_input}{Atk_number_input}'))
+            print(pokedexdf.query(f'Attack{Atk_filter_input}{Atk_number_input}'))
     else:
         Atk_line()
 
@@ -87,19 +87,19 @@ if Defense_full_input=="yes":
         Defense_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=)"))
         if Defense_filter_input=="=":
             Defense_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Defense_filter_input}{Defense_number_input}'))
+            print(pokedexdf.query(f'Defense{Defense_filter_input}{Defense_filter_input}{Defense_number_input}'))
         if Defense_filter_input==">":
             Defense_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Defense_filter_input}{Defense_number_input}'))
+            print(pokedexdf.query(f'Defense{Defense_filter_input}{Defense_number_input}'))
         if Defense_filter_input=="<":
             Defense_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Defense_filter_input}{Defense_number_input}'))
+            print(pokedexdf.query(f'Defense{Defense_filter_input}{Defense_number_input}'))
         if Defense_filter_input==">=":
             Defense_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Defense_filter_input}{Defense_number_input}'))
+            print(pokedexdf.query(f'Defense{Defense_filter_input}{Defense_number_input}'))
         if Defense_filter_input=="<=":
             Defense_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Defense_filter_input}{Defense_number_input}'))
+            print(pokedexdf.query(f'Defense{Defense_filter_input}{Defense_number_input}'))
     else:
         Defense_line()
 
@@ -110,19 +110,19 @@ if SpAtk_full_input=="yes":
         SpAtk_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=)"))
         if SpAtk_filter_input=="=":
             SpAtk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpAtk_filter_input}{SpAtk_number_input}'))
+            print(pokedexdf.query(f'SpAtk{SpAtk_filter_input}{SpAtk_filter_input}{SpAtk_number_input}'))
         if SpAtk_filter_input==">":
             SpAtk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpAtk_filter_input}{SpAtk_number_input}'))
+            print(pokedexdf.query(f'SpAtk{SpAtk_filter_input}{SpAtk_number_input}'))
         if SpAtk_filter_input=="<":
             SpAtk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpAtk_filter_input}{SpAtk_number_input}'))
+            print(pokedexdf.query(f'SpAtk{SpAtk_filter_input}{SpAtk_number_input}'))
         if SpAtk_filter_input==">=":
             SpAtk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpAtk_filter_input}{SpAtk_number_input}'))
+            print(pokedexdf.query(f'SpAtk{SpAtk_filter_input}{SpAtk_number_input}'))
         if SpAtk_filter_input=="<=":
             SpAtk_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpAtk_filter_input}{SpAtk_number_input}'))
+            print(pokedexdf.query(f'SpAtk{SpAtk_filter_input}{SpAtk_number_input}'))
     else:
         SpAtk_line()
 
@@ -133,19 +133,19 @@ if SpDef_full_input=="yes":
         SpDef_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=)"))
         if SpDef_filter_input=="=":
             SpDef_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpDef_filter_input}{SpDef_number_input}'))
+            print(pokedexdf.query(f'SpDef{SpDef_filter_input}{SpDef_filter_input}{SpDef_number_input}'))
         if SpDef_filter_input==">":
             SpDef_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpDef_filter_input}{SpDef_number_input}'))
+            print(pokedexdf.query(f'SpDef{SpDef_filter_input}{SpDef_number_input}'))
         if SpDef_filter_input=="<":
             SpDef_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpDef_filter_input}{SpDef_number_input}'))
+            print(pokedexdf.query(f'SpDef{SpDef_filter_input}{SpDef_number_input}'))
         if SpDef_filter_input==">=":
             SpDef_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpDef_filter_input}{SpDef_number_input}'))
+            print(pokedexdf.query(f'SpDef{SpDef_filter_input}{SpDef_number_input}'))
         if SpDef_filter_input=="<=":
             SpDef_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{SpDef_filter_input}{SpDef_number_input}'))
+            print(pokedexdf.query(f'SpDef{SpDef_filter_input}{SpDef_number_input}'))
     else:
         SpDef_line()
 
@@ -156,19 +156,19 @@ if Speed_full_input=="yes":
         Speed_filter_input=str(input("What comparison operator to be applied?(=/>/</>=/<=)"))
         if Speed_filter_input=="=":
             Speed_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Speed_filter_input}{Speed_number_input}'))
+            print(pokedexdf.query(f'Speed{Speed_filter_input}{Speed_filter_input}{Speed_number_input}'))
         if Speed_filter_input==">":
             Speed_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Speed_filter_input}{Speed_number_input}'))
+            print(pokedexdf.query(f'Speed{Speed_filter_input}{Speed_number_input}'))
         if Speed_filter_input=="<":
             Speed_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Speed_filter_input}{Speed_number_input}'))
+            print(pokedexdf.query(f'Speed{Speed_filter_input}{Speed_number_input}'))
         if Speed_filter_input==">=":
             Speed_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Speed_filter_input}{Speed_number_input}'))
+            print(pokedexdf.query(f'Speed{Speed_filter_input}{Speed_number_input}'))
         if Speed_filter_input=="<=":
             Speed_number_input=int(input("What is the number to be pitted against? "))
-            print(pokedexdf.query(f'HP{Speed_filter_input}{Speed_number_input}'))
+            print(pokedexdf.query(f'Speed{Speed_filter_input}{Speed_number_input}'))
     else:
         Speed()
 
@@ -182,7 +182,7 @@ print(pokedexdf.query('Type_1=="Water"'))
 print("\nType 2 Water Pokemons:")
 print(pokedexdf.query('Type_2=="Water"'))
 
-#Showing Pokemons having more than 100 HP:
+#Showing Pokemons having more than 100 :
 print("Pokemons with more than 100 HP:")
 print(pokedexdf.query('HP>100'))
 
